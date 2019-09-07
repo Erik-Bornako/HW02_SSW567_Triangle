@@ -1,0 +1,111 @@
+Running unit tests
+testEquilateralTriangles (__main__.TestTriangles) ... FAIL
+testInvaildInputA (__main__.TestTriangles) ... ERROR
+testInvaildInputB (__main__.TestTriangles) ... ok
+testIsocelesTriangleA (__main__.TestTriangles) ... FAIL
+testIsocelesTriangleB (__main__.TestTriangles) ... FAIL
+testNotATriangle (__main__.TestTriangles) ... FAIL
+testRightTriangleA (__main__.TestTriangles) ... FAIL
+testRightTriangleB (__main__.TestTriangles) ... FAIL
+testScaleneTriangleA (__main__.TestTriangles) ... FAIL
+testScaleneTriangleB (__main__.TestTriangles) ... FAIL
+
+=============================================================
+ERROR: testInvaildInputA (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle('hello',1,2),'NotATrian
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    if a > 200 or b > 200 or c > 200:
+TypeError: '>' not supported between instances of 'str' and '
+
+=============================================================
+FAIL: testEquilateralTriangles (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+ : 1,1,1 should be equilateral
+
+=============================================================
+FAIL: testIsocelesTriangleA (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(2,2,3),'Isoceles','2,2,
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+ : 2,2,3 is a Isoceles triangle
+
+=============================================================
+FAIL: testIsocelesTriangleB (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(2,3,2),'Isoceles','2,3,
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+ : 2,3,2 is a Isoceles triangle
+
+=============================================================
+FAIL: testNotATriangle (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(100,1,2),'NotATriangle'
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+ : 100,1,2 is not a triangle
+
+=============================================================
+FAIL: testRightTriangleA (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 i
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 3,4,5 is a Right triangle
+
+=============================================================
+FAIL: testRightTriangleB (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(5,3,4),'Right','5,3,4 i
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+ : 5,3,4 is a Right triangle
+
+=============================================================
+FAIL: testScaleneTriangleA (__main__.TestTriangles)
+-------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\T
+    self.assertEqual(classifyTriangle(8,10,12),'Scalene','8,1
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+ : 8,10,12 is a Scalene triangle
+----------
+Traceback (most recent call last):
+  File "c:\Users\Erik\Documents\GitHub\HW02_SSW567_Triangle\TestTriangle.py", line 39, in testScaleneTriangleB
+    self.assertEqual(classifyTriangle(10,12,8),'Scalene','10,12,8 is a Scalene triangle')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+ : 10,12,8 is a Scalene triangle
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.142s
+
+FAILED (failures=8, errors=1)

@@ -1,1 +1,1 @@
-# HW02_SSW567_Triangle
+[![build status of master](https://travis-ci.org/Erik-Bornako/HW02_SSW567_Triangle.svg?branch=master)](https://travis-ci.org/Erik-Bornako/HW02_SSW567_Triangle)

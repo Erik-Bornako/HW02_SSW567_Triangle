@@ -1,0 +1,16 @@
+Running unit tests
+testEquilateralTriangles (__main__.TestTriangles) ... ok
+testInvaildInputA (__main__.TestTriangles) ... ok
+testInvaildInputB (__main__.TestTriangles) ... ok
+testIsocelesTriangleA (__main__.TestTriangles) ... ok
+testIsocelesTriangleB (__main__.TestTriangles) ... ok
+testNotATriangle (__main__.TestTriangles) ... ok
+testRightTriangleA (__main__.TestTriangles) ... ok
+testRightTriangleB (__main__.TestTriangles) ... ok
+testScaleneTriangleA (__main__.TestTriangles) ... ok
+testScaleneTriangleB (__main__.TestTriangles) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.071s
+
+OK
